@@ -1,0 +1,154 @@
+/* CSS VARIABLES */
+:root {
+  /* 01 COLORS */
+  --Dark-Blue: #172339;
+  --Grey: #49566d;
+  --Cream: #f3ede7;
+  --Cream-White: #faf8f6;
+  --Custom-Purple: #a060ff;
+  --Custom-Pink: #cb30e3;
+  --Custom-Gold: #ffa84e;
+
+  /* 02 TYPOGRAPHY */
+  --Epilogue: "Epilogue", sans-serif;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Background color for body */
+
+body {
+  background-color: var(--Cream);
+  font-family: var(--Epilogue);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  max-width: 100%;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.transparent-beta-btn {
+  background-color: transparent;
+  border: 1px solid var(--Dark-Blue);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Main content - text */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.epilogue-bold {
+  font-weight: bold;
+}
+
+.hero-content {
+  position: relative;
+  padding: 0rem 0.98rem;
+}
+
+.curved-line1 {
+  position: absolute;
+  left: 180px;
+  top: -20px;
+  height: 19px;
+  width: 151px;
+}
+
+.hero-content > h1 {
+  font-size: 2.375rem;
+  color: var(--Dark-Blue);
+  font-weight: 500;
+  max-width: 343px;
+}
+
+.hero-content > p {
+  color: var(--Grey);
+  line-height: 28px;
+  max-width: 343px;
+  padding: 2rem 0rem;
+}
+
+.beta-btn {
+  background-color: var(--Dark-Blue);
+  color: var(--Cream-White);
+  padding: 0.938rem 1.969rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero image */
+
+.hero-landscape {
+  height: 343px;
+  padding: 3.438rem 1rem;
+  border-radius: 15px;
+}
+
+/* Stats */
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.stats > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats > li:nth-child(2) {
+  padding: 2rem 0rem;
+}
+
+.number {
+  font-size: 3rem;
+  color: var(--Dark-Blue);
+}
+
+.type {
+  color: var(--Grey);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+/* It just works box */
+
+.works-box {
+  background-color: var(--Dark-Blue);
+  width: 100%;
+  border-radius: 15px;
+}
